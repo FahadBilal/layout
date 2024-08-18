@@ -103,6 +103,7 @@ color: #20B486;
 .nav-links li a:hover
 {
     color: #1A906B;
+    transition: all 0.3s ease-in-out;
 
 }
 .btn{
@@ -126,6 +127,7 @@ border-radius: 8px;
 .btn-signIn:hover{
     background-color: #20B486;
     border :1px solid #20B486;
+    transition: all 0.3s ease-in-out;
 }
 .btn-signUp{
 padding: 10px 16px 10px 16px;
@@ -238,6 +240,7 @@ box-shadow: 0px 1px 2px 0px #1018280D;
     color: #3BC49A;
     background: #EAFFF9;
     border: none;
+    transition: all 0.3s ease-in-out;
 }
 .btn-home a.btn-2{
 font-family: Inter;
@@ -261,6 +264,7 @@ text-decoration: none;
 .btn-home a.btn-2:hover{
     color: #fff;
  background: #20B486;
+ transition: all 0.3s ease-in-out;
 }
 
 .home-icon{
@@ -291,18 +295,51 @@ text-align: left;
     position: relative;
 }
 
-.home-2 .home-img{
+/* .home-2:hover.home-2 .home-img{
+    background: url("/images/117-1176970_female-student-png-image-studsparent-png-removebg-preview.png");ent-png-tran
+    transition: all ;
+} */
+
+.home-2 .home-img {
     width: 495px;
     height: 495px;
     position: absolute;
     top: -10px;
     left: -10px;
-    background: url(/images/young-student-woman-wearing-denim-jacket-eyeglasses-holding-colorful-folders-showing-thumb-up-pink-transformed\ 1.png);
+    animation: backgroundChange 10s ease-in-out infinite alternate;
+    background: url("/images/young-student-woman-wearing-denim-jacket-eyeglasses-holding-colorful-folders-showing-thumb-up-pink-transformed%201.png");
     background-repeat: no-repeat;
     background-position: center;
-
-
 }
+
+@keyframes backgroundChange {
+    0% {
+        background: url("/images/117-1176970_female-student-png-image-studsparent-png-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    25% {
+        background: url("/images/young-student-woman-wearing-denim-jacket-eyeglasses-holding-colorful-folders-showing-thumb-up-pink-transformed%201.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    50% {
+        background: url("/images/118-1188735_download-student-girl-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    75% {
+        background: url("/images/i-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    100% {
+        background: url("/images/IMG_8079_1612187809063_1612187818802-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
 .video-course{
     position: absolute;
     display: flex;
@@ -542,6 +579,7 @@ text-align: left;
 {
     background-color: #4AC8AE;
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 .service-card .active-card .card-img img{
     background-color: #EDFFF9;
@@ -611,7 +649,8 @@ color: #667085;
 
 }
 .class-card .card:hover{
-    background-color: #D0D5DD;
+    background-color: #EAFFF9;
+    transition: all 0.3s ease-in-out;
 }
 .class-card .card .text-card{
     display: flex;
@@ -746,6 +785,10 @@ flex-direction: column;
 background-color: #F9FAFB;
 text-align: center;
 position: relative;
+}
+.tutor-card .card:hover{
+    background-color: #EAFFF9;
+    transition: all 0.3s ease-in-out;
 }
 .tutor-card .card img{
     width: 80px;
