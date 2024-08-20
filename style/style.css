@@ -306,7 +306,7 @@ text-align: left;
     position: absolute;
     top: -10px;
     left: -10px;
-    animation: backgroundChange 10s ease-in-out infinite alternate;
+    animation: backgroundChange 10s linear infinite alternate;
     background: url("/images/young-student-woman-wearing-denim-jacket-eyeglasses-holding-colorful-folders-showing-thumb-up-pink-transformed%201.png");
     background-repeat: no-repeat;
     background-position: center;
